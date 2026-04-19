@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sekuya&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Roboto, sans-serif;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="aboutme1"></div>
+
+
+    
+    <br>
+    
+
+<script>
+  fetch("nev.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+    fetch("aboutme.html")
+    .then(res => res.text())
+    .then(data => {
+     document.getElementById("aboutme1").innerHTML = data;
+      
+    });
+</script>
+<script src="aboutme.js"></script>
+</body>
+</html>
